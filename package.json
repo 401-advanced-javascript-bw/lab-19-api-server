@@ -2,7 +2,7 @@
   "name": "lab-19-api-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "dependencies": {
     "@nmq/q": "^1.0.3",
     "cors": "^2.8.5",
