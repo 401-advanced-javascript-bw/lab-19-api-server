@@ -13,6 +13,7 @@
     "mongoose": "^5.5.13",
     "mongoose-schema-jsonschema": "^1.2.1",
     "morgan": "^1.9.1",
+    "swagger": "^0.7.5",
     "swagger-ui-express": "^4.0.6"
   },
   "devDependencies": {},

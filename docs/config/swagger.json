@@ -1,0 +1,142 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "movies api",
+    "description": "movies api for queue server lab",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "https://lab-19-api-server-bw.herokuapp.com"
+    }
+  ],
+  "paths": {
+    "/api/v1/movies/5d07b43270408800177c236a": {
+      "put": {
+        "description": "update specific movie",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "genre": {
+                    "type": "string"
+                  },
+                  "rating": {
+                    "type": "integer"
+                  },
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\"title\":\"finding nemo\",\n    \"genre\": \"family\",\n    \"rating\": 10\n}\n"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "updated movie",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://lab-19-api-server-bw.herokuapp.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://lab-19-api-server-bw.herokuapp.com"
+        }
+      ]
+    },
+    "/api/v1/movies": {
+      "get": {
+        "description": "get movies from api",
+        "responses": {
+          "200": {
+            "description": "got movies from api",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://lab-19-api-server-bw.herokuapp.com"
+          }
+        ]
+      },
+      "post": {
+        "description": "add movie to api",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "genre": {
+                    "type": "string"
+                  },
+                  "rating": {
+                    "type": "integer"
+                  },
+                  "title": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\"title\":\"finding nemo\",\n    \"genre\": \"family\",\n    \"rating\": 9\n}\n"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "added movie to api",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://lab-19-api-server-bw.herokuapp.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://lab-19-api-server-bw.herokuapp.com"
+        }
+      ]
+    }
+  }
+}
